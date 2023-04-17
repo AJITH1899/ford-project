@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Poppins:wght@500&family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+body{
+    text-transform: capitalize;
+    
+}
+.container{
+    background-color: black;
+    width: 100%;
+    min-height: 100vh;
+    color: beige;
+    padding: 10px;
+}
+header{
+    display: flex;
+    
+    
+}
+.logo{
+    flex: 60%;
+}
+nav{
+    flex: 40%;
+    display: flex;
+    overflow: hidden;
+}
+nav a{
+    flex: 1;
+    text-decoration: none;
+    color: white;
+   
+}
+    
+
+.mainbody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 50vh;
+    justify-content: center;
+}
+.mainbody h1{
+    font-size: 50px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+.mainbody h3 span{
+    color: yellow;
+    
+}   
+.mainbody h3{
+    margin-bottom: 10px;
+}
+.mainbody p{
+    margin-bottom: 10px;
+}
+.mainbody button{
+    padding: 10px 15px;
+    border-radius: 10px;
+    background: transparent;
+    color: azure;
+}
+.mainbody button:hover{
+    background-color: red;
+    transition: all 0.9s;
+}
+.carimg img{
+    width: 300px;
+    overflow: hidden;
+}
+.carimg {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+   
+}
+
+
+
+
+/* media query */
+@media (max-width:350px){
+    .mainbody button{
+        background-color: yellow;
+        font-size: 10px;
+        
+    }
+    .mainbody button:nth-child(2){
+        background-color: rgb(25, 0, 255);
+        position: relative;
+        top: 10px;
+    }
+    .mainbody p{
+        font-size: 10px;
+    }
+    
+
+
+}
+@media (min-width:600px){
+    .carimg img{
+        width: 600px;
+    }
+}
+    
